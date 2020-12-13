@@ -1,0 +1,815 @@
+@import "mainStyle";
+$main_text_color3: #696969;
+$mainImage-font-size: 3.5rem;
+$mainImage-font-weight: 300;
+$main_bgColor_mobile: #a9b8c0;
+
+
+body{
+    font-family: $main_font;
+}
+
+img{
+    max-width: $images_width;
+}
+
+
+
+.websiteNumbers{
+    background-color: $primary_color;
+}
+
+.websiteNumbersImage{
+    padding: 4rem;
+}
+
+.websiteNumbersContent h2{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.websiteNumbersContent p{
+    font-size: 1rem;
+}
+
+.websiteServicesImage{
+    padding: 4rem;
+    position: sticky;
+    top: 2rem;
+}
+
+.all_servicesLink{
+    color: $main_text_color1;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 3px solid $main_button_color;
+}
+
+.all_servicesLink:hover{
+    text-decoration: none;
+    color: $main_button_color;
+}
+
+.websiteWork a:not(.workImgs){
+    border-bottom: 2px solid $main_button_color;
+    border-width: thick;
+    color: $main_text_color2;
+    font-size: 1.7rem;
+}
+
+.websiteWork a:not(.workImgs):hover{
+    text-decoration: none;
+    color: $main_button_color;
+}
+
+.projectsImages{
+    position: absolute;
+    left: 15%;
+    top: 6%;
+}
+
+.haveAnIdea{
+    position: relative;
+}
+
+.haveAnIdea>h2{
+    color: $main_text_color2;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+.haveAnIdea>button{
+    background-color: $main_button_color;
+    border: 1px solid $main_button_color;
+    color: $main_text_color2;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+
+}
+
+.NewsLetter{
+    position: relative;
+}
+
+.NewsLetter>.newsLetterHeader1{
+    color: $main_text_color2;
+    font-size: 2.5rem;
+    font-weight: $mainImage-font-weight;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+
+.NewsLetter>.newsLetterHeader2{
+    color: $main_text_color2;
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+}
+
+.NewsLetter>.newsletterForm{
+    position: absolute;
+    top: 75%;
+    left: 25%;
+}
+
+form.newsletterForm input[type=text] {
+    padding: 0.5rem 2.5rem 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    border: 1px solid grey;
+    float: left;
+    width: 70%;
+    background: #f1f1f1;
+}
+  
+form.newsletterForm button {
+    float: left;
+    width: 30%;
+    padding: 0.5rem 2rem;
+    background: $main_button_color;
+    color: $main_text_color2;
+    font-size: 1.1rem;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.newsletterForm button:hover {
+    background: #0b7dda;
+}
+
+.getInTouchImage{
+    padding: 4rem;
+}
+
+.getInTouchForm input, .getInTouchForm textarea{
+    border: 1px solid $main_text_color3;
+    color: $main_text_color3;
+    width: 100%;
+}
+ 
+.getInTouchForm textarea{
+    width: 100%;
+}
+
+.msgInput{
+    padding-bottom: 4.2rem !important;
+}
+
+@media screen and (min-width: 320px) {
+    .desktop{
+        display: none;
+    }
+
+    .mobileTablet{
+        display: block;
+    }
+
+    .mainBgMobile{
+        background-color: $main_text_color2;
+    }
+
+    .mainContentMobile{
+        color: $primary_color;
+        padding-top: 2rem;
+        padding-left: 1rem;
+    }
+
+    .carousel-caption{
+        top: 33%;
+        left: 8%;
+    }
+
+    .mainImage-button, .mainImage-button-center{
+        background: $main_button_color;
+        border: 1px solid $main_button_color;
+        border-radius: 3px;
+        color: $main_text_color2;
+        font-size: 1.2rem;
+        padding: 0.2rem 2rem;
+        margin-top: 1.5rem;
+    }
+
+    .mainContentMobile .mainDesc{
+        padding-top: 1rem;
+    }
+
+    .startProBtnMobile{
+        background: transparent;
+        border: 2px solid $main_button_color;
+        color: $main_text_color2;
+        font-size: 1rem;
+        padding: 0.5rem 2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .startProBtnMobile:focus{
+        outline: 0;
+    }
+
+    .startProBtnMobile:hover{
+        background: $main_button_color;
+    }
+
+    .websiteDesktop{
+        display: none;
+    }
+
+    .websiteNumbersImage{
+        display: none;
+    }
+    
+    .websiteNumbersMobile{
+        color: $main_text_color2;
+        font-size: 1.7rem;
+    }
+
+    .websiteNumbersMobile p{
+        padding-left: 2rem;
+        font-weight: bold;
+    }
+
+    .firstWebsiteNumbersContent h2, .firstWebsiteNumbersContent p{
+        border-left: 0;
+    }
+    
+    .lastWebsiteNumbersContent h2, .lastWebsiteNumbersContent p{
+        border-right: 0;
+    }
+
+    .websiteNumbersContent{
+        padding-top: 0;
+        color: $main_text_color2;
+        text-align: center;
+    }
+
+
+    .websiteNumbersContent h2{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+    }
+
+    // @property --numdeliveryprojects {
+    //     syntax: "<integer>";
+    //     initial-value: 350;
+    //     inherits: false;
+    // }
+
+    // .deliveredProjects{
+    //     animation: counter 4s alternate ease-in-out;
+    //     counter-reset: numdeliveryprojects var(--numdeliveryprojects);
+    // }
+
+    // .deliveredProjects::after{
+    //     content: counter(numdeliveryprojects);
+    // }
+
+    // @keyframes counter {
+    //     from {
+    //       --numdeliveryprojects: 0;
+    //     }
+    //     to {
+    //       --numdeliveryprojects: 350;
+    //     }
+    // }
+
+    .websiteNumbersContent p{
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+
+    .spacing{
+        display: none;
+    }
+
+    .secondWebsitenumbers{
+        padding-top: 0;
+    }
+
+    .lastWebsiteNumbersContent{
+        margin-bottom: 2rem;
+    }
+
+    .websiteServicesMobile, .websiteClientsMobile{
+        color: $main_text_color1;
+        font-size: 1.7rem;
+    }
+
+    .websiteServicesMobile bold, .websiteClientsMobile bold{
+        font-weight: bold;
+    }
+
+    .addPadding{
+        padding-right: 15px;
+    }
+
+    .servicesImages img{
+        padding-top: 2rem;
+    }
+
+    .servicesTopContentText, .servicesContentText{
+        padding-top: 0;
+        text-align: left;
+    }
+
+    .all_services{
+        text-align: center;
+    }
+
+    .websiteWorkImage{
+        display: none;
+    }
+
+    .websiteWorkTablet{
+        display: none;
+    }
+
+    .websiteWorkMobileContent{
+        background-color: $primary_color;
+    }
+
+    .websiteWorkMobile{
+        color: $main_text_color2;
+        font-size: 1.7rem;
+        padding-left: 1rem;
+    }
+
+    .websiteWorkMobile bold{
+        font-weight: bold;
+    }
+
+    .ourWorkImages{
+        padding: 1rem;
+    }
+
+    .ourWorkImages img{
+        padding-top: 1.5rem;
+    }
+
+    .all_projects{
+        text-align: center;
+    }
+
+    .all_projects a{
+        border-bottom: 3px solid $main_button_color;
+        color: $main_text_color2;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .all_projects a:hover{
+        color: $main_button_color;
+        text-decoration: none;
+    }
+
+    hr{
+        background-color: $main_button_color;
+    }
+
+    .haveAnIdeaMobile{
+        background-color: $primary_color;
+        color: $main_text_color2;
+    }
+
+    .haveAnIdeaTablet{
+        display: none;
+    }
+
+    .haveAnIdeaContent bold{
+        font-weight: bold;
+    }
+
+    .startProjectBtnMob{
+        text-align: center;
+        padding: 2.5rem 0;
+    }
+
+    .startProject{
+        background-color: $main_button_color;
+        border: 0;
+        color: $main_text_color2;
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 0.5rem 1rem;
+    }
+
+    .ourClientsDesktop{
+        display: none;
+    }
+
+    .websiteClientsTablet{
+        display: none;
+    }
+
+    .clientsImage{
+        width: 40%;
+    }
+
+    .clientsDesktop{
+        display: none;
+    }
+
+    .newsLetter{
+        background-color: $primary_color;
+    }
+
+    .NewsLetterTablet{
+        display: none;
+    }
+
+    .newsLetter h4{
+        color: $main_text_color2;
+        padding: 3rem 3rem 1rem 3rem;
+    }
+
+    .newsLetter .newsletterFormMobile{
+        padding: 1rem 1rem 3rem 1rem;
+    }
+
+    .newsletterFormMobile input{
+        float: left;
+        padding: 0.2rem 0.2rem 0.2rem 0.5rem;
+    }
+
+    .newsletterFormMobile button{
+        padding: 0.2rem 0.5rem;
+        background: #4285f4;
+        color: #ffffff;
+        font-size: 1.1rem;
+        border: 1px solid grey;
+        border-left: none;
+    }
+
+    .getInTouchMobileImg{
+        font-size: 1.7rem;
+    }
+
+    .getInTouchMobile{
+        display: block;
+    }
+
+    .inTouchFirstRow{
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .desktop{
+        display: block;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .mainContent{
+    }
+
+    .mainContentText{
+        padding: 2rem;
+    } 
+    
+    .top-left{
+        color: $primary_color;
+        font-size: 1.5rem !important;
+        padding-top: 1rem;
+    }
+
+    .website-name{
+        color: $primary_color;
+        font-size: 2rem !important;
+    }
+
+    .website-link, .website-link-bottom, .website-desc-bottom{
+        color: $primary_color;
+        font-size: 1.5rem !important;
+        font-weight: $mainImage-font-weight;
+    }
+
+    .top-center{
+        color: $primary_color;
+        font-size: 1.5rem !important;
+        font-weight: $mainImage-font-weight;
+        padding-top: 1rem;
+    }
+
+    .bottom-center{
+        color: $primary_color;
+        font-size: 1.5rem !important;
+        font-weight: $mainImage-font-weight;
+    }
+
+    .mainImage-button, .mainImage-button-center{
+        font-size: 1.5rem;
+        padding: 0.5rem 4.3rem;
+        margin-top: 1.5rem;
+    }
+
+
+    .bottom{
+        color: $primary_color;
+        font-size: 1.5rem !important;
+        font-weight: $mainImage-font-weight;
+    }
+
+    .websiteNumbersContent{
+        padding-top: 5rem;
+    }
+
+    .websiteNumbersContent h2{
+        font-size: 3rem;
+        margin-top: 0;
+    }
+
+    .websiteNumbersContent p{
+        margin-top: 0;
+        font-weight: 500;
+    }
+
+    .secondWebsitenumbers{
+        padding-top: 1rem;
+    }
+
+    .lastWebsiteNumbersContent{
+        margin-bottom: 0;
+    }
+
+    .addPadding{
+        padding-right: 0;
+    }
+
+    .servicesTopContentText{
+        padding-top: 7rem;
+        padding-left: 0;
+    }
+
+    .servicesContentText{
+        padding-top: 2rem;
+        padding-left: 0;
+    }
+
+    .all_services{
+        text-align: start;
+    }
+
+    .websiteWorkTablet{
+        background-color: $primary_color;
+    }
+
+    .websiteWorkImage {
+        display: none;
+    }
+
+    .mobileTablet .ourWorkDetails{
+        margin-top: 2rem;
+    }
+
+    .photoGrid{
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+
+    .ourWorkText{
+        padding: 2rem;
+    }
+    
+    .websiteWorkTablet{
+        display: block;
+    }
+
+    .websiteWorkTablet span{
+        border-bottom: 2px solid $main_button_color;
+        border-width: thick;
+        color: $main_text_color2;
+        font-size: 1.7rem;
+    }
+
+    .haveAnIdeaTablet, .NewsLetterTablet{
+        background-color: $primary_color;
+        color: $main_text_color2;
+        padding: 3rem;
+        text-align: center;
+    }
+
+    .NewsLetterTablet{
+        display: block;
+        padding: 5rem;
+    }
+
+    .haveAnIdeaTablet>button{
+        background-color: $main_button_color;
+        color: $main_text_color2;
+        border: 1px solid $main_button_color;
+        font-size: 1.5rem;
+        padding: 0.5rem 2rem;
+        margin-top: 1rem;
+    }
+
+    .clientsImage{
+        width: 80%;
+    }
+    .clientsDesktop{
+        display: flex;
+    }
+
+    .websiteClientsTablet{
+        display: block;
+    }
+
+    .getInTouchMobile, .getInTouchImage{
+        display: none;
+    }
+
+    .inTouchFirstRow{
+        margin-top: 3rem !important;
+    }
+
+    .carousel-indicators, .carousel-control-prev, .carousel-control-next{
+        display: none;
+    }
+
+    .carousel-caption{
+        left: 5%;
+        top: 1%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .mobileTablet{
+        display: none;
+    }
+
+    #myHeader{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .navbar-nav a{
+        font-size: 1.1rem;
+    }
+
+    .navbar-nav a:hover{
+        border-bottom: 2px solid $main_button_color;
+    }
+
+    .intouch{
+        background-color: $main_button_color;
+    }
+
+    .intouch:hover{
+        background-color: $hovering_color;
+    }
+
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .carousel-caption{
+        left: 5%;
+        top: 1%;
+    }
+    
+
+    .mainContentText{
+        padding: 7rem 4rem;
+    }
+
+    .top-left{
+        padding-top: 0;
+    }
+    
+    .website-name{
+        font-weight: 600;
+        padding-top: 1rem;
+    }
+    
+    .website-link, .website-link-bottom{
+        font-size: 1.5rem !important;
+        font-weight: $mainImage-font-weight;
+        padding-top: 1.5rem;
+    }
+
+    .website-desc-bottom{
+        font-size: 1.5rem !important;
+        font-weight: $mainImage-font-weight;
+    }
+    
+    .top-center{
+        color: $primary_color;
+        font-size: 1.5rem !important;
+        font-weight: $mainImage-font-weight;
+        padding-left: 1rem;
+    }
+    
+    .bottom-center{
+        font-size: 1.5rem !important;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    .bottom{
+        padding-left: 1rem;
+    }
+    
+    .mainImage-button{
+        margin-left: 1rem;
+        margin-top: 1.2rem;
+    }
+
+    .mainImage-button-center{
+        margin-left: 5rem;
+        margin-top: 2rem;
+    }
+
+    .websiteNumbersImage{
+        display: block;
+    }
+
+    .websiteDesktop{
+        display: flex;
+    }
+
+    .spacing{
+        display: block;
+    }
+
+    .firstWebsiteNumbersContent h2, .firstWebsiteNumbersContent p{
+        border-left: 6px solid $main_button_color;
+    }
+    
+    .lastWebsiteNumbersContent h2, .lastWebsiteNumbersContent p{
+        border-right: 6px solid $main_button_color;
+    }
+
+    .websiteWorkImage{
+        display: block;
+        padding: 4rem;
+        position: sticky;
+        top: 2rem;
+    }
+    
+    .websiteWork{
+        background-image: url("../../assets/ourWorkBg.png");
+        height: 1224px;
+        background-color: #2e2e2e;
+        background-repeat: no-repeat;
+    }
+
+    .workImgs img{
+        opacity: 1;
+        transition: .5s ease;
+    }
+
+    .workImgs:hover img{
+        opacity: 0.3;
+    }
+
+    .photoGrid{
+        padding-right: 5rem;
+    }
+
+    .ourWorkText{
+        padding: 5rem;
+    }
+
+    .haveAnIdeaTablet{
+        display: none;
+    }
+
+    .NewsLetterTablet{
+        display: none;
+    }
+
+    .ourClientsDesktop{
+        display: block;
+        position: sticky;
+        top: 2rem;
+    }
+
+    .websiteClientsTablet{
+        display: none;
+    }
+
+    .getInTouchMobile{
+        display: none;
+    }
+
+    .getInTouchImage{
+        display: block;
+    }
+}
+

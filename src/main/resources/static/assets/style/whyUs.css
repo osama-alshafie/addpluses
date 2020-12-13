@@ -1,0 +1,199 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto";
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  background-color: #3d6fc2;
+}
+
+@media screen and (min-width: 320px) {
+  .desktop, .tablet {
+    display: none;
+  }
+
+  .mobile, .mobileTablet {
+    display: block;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .desktop, .tablet {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .desktopOnly {
+    display: block;
+  }
+
+  .tablet, .mobileTablet {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) {
+  .addplusesNumbers {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .addplusesNumbers .mainHeaderNumbers {
+    color: #ffffff;
+    font-size: 1.7rem;
+    border-bottom: 3px solid #4285f4;
+    border-width: thick;
+    padding-bottom: 0.5rem;
+  }
+
+  .addplusesNumbers span {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .numbersContent {
+    text-align: center;
+  }
+
+  .numbersContent h4 {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .removeSpacing {
+    padding-top: 0.5rem;
+    margin-top: 0;
+  }
+
+  .competencies {
+    text-align: center;
+  }
+
+  .competencies span {
+    font-size: 1.7rem;
+    border-bottom: 3px solid #4285f4;
+    border-width: thick;
+  }
+
+  .competencies h3 {
+    color: #4285f4;
+  }
+
+  .listDetails {
+    padding-top: 1rem;
+    text-align: left;
+  }
+
+  .listDetails {
+    padding-left: 1rem;
+    list-style: none;
+  }
+
+  .listDetails li::before {
+    content: "•";
+    font-size: 1.3rem;
+    color: #4285f4;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  .kickoff {
+    background-color: #2e2e2e;
+    text-align: center;
+  }
+
+  .kickoff img {
+    width: fit-content;
+  }
+
+  .kickoff h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .kickoff h2, .kickoff p {
+    color: #ffffff;
+  }
+
+  .marketsImg {
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .addplusesNumbers {
+    text-align: inherit;
+  }
+
+  .addplusesNumbers .mainHeaderNumbers {
+    font-size: 2.5rem;
+  }
+
+  .addplusesNumbers span {
+    color: #ffffff;
+    font-size: 2.5rem;
+    border-bottom: 3px solid #4285f4;
+    border-width: thick;
+    padding-bottom: 0.5rem;
+  }
+
+  .numbersContent {
+    text-align: center;
+  }
+
+  .numbersContent h4 {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .removeSpacing {
+    padding-top: 3rem;
+    margin-top: 1rem;
+  }
+
+  .competencies {
+    text-align: inherit;
+  }
+
+  .competencies span {
+    font-size: 2.5rem;
+  }
+
+  .competencies .row {
+    padding-top: 3rem;
+  }
+
+  .kickoff {
+    text-align: inherit;
+  }
+
+  .kickoff img {
+    width: 100%;
+  }
+
+  .kickoff h2 {
+    font-size: 2rem;
+  }
+
+  .kickoff h2, .kickoff p {
+    padding-top: 3rem;
+  }
+
+  .kickoff p {
+    padding-left: 3rem;
+  }
+}
+
+/*# sourceMappingURL=whyUs.css.map */

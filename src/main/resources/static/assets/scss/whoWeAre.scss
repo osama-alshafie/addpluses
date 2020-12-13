@@ -1,0 +1,206 @@
+@import "mainStyle";
+
+img{
+    max-width: 100%;
+}
+
+hr{
+    background-color: $main_button_color;
+}
+
+.about-us-section img{
+    width: fit-content;
+    padding-left: 1rem;
+}
+
+.ourValuesDesktop{
+    position: relative;
+}
+
+.ourValuesDesktop h1{
+    color: $main_text_color2;
+    position: absolute;
+}
+
+.ourValuesText{
+    border-bottom: 2px solid $main_button_color;
+    border-width: revert;
+    top: 15%;
+    left: 15%;
+}
+
+.efficiencyText{
+    top: 35%;
+    left: 25%;
+}
+
+.integrityText{
+    top: 55%;
+    left: 35%;
+}
+
+.innovationText{
+    top: 75%;
+    left: 45%;
+}
+
+form input, form textarea{
+    border: 1px solid $main_text_color3;
+    color: $main_text_color3;
+    width: 100%;
+}
+
+@media screen and (min-width: 320px) {
+    .mainDesc{
+        background-color: $primary_color;
+        text-align: center;
+    }
+
+    .desktopOnly{
+        display: none;
+    }
+
+    .ourValuesMobile span, .ourValuesMobile p{
+        color: $main_text_color2;
+        font-size: 2rem;
+    }
+    
+    .mainDesc p{
+        color: $main_text_color2;
+        font-size: 1rem;
+    }
+
+    .firstDescription, .secondDescription{
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    .secondDescription{
+        padding-bottom: 4rem;
+    }
+
+    .weHave h1{
+        text-align: center;
+    }
+
+    .ourValuesMobile{
+        background-color: $primary_color;
+    }
+
+    .companyProfile button{
+        border: 0;
+        background-color: $main_button_color; 
+        color: $main_text_color2;
+        padding: 0.5rem 2rem;
+    }
+
+    .about-us-section .oneElement{
+        text-align: center;
+    }
+
+    .oneElement p{
+        text-align: left;
+    }
+        
+}
+
+@media screen and (min-width: 768px) {
+    .mainDesc{
+        text-align: center;
+    }
+
+    .weHave h1{
+        text-align: center;
+        // border-bottom: 2px solid $main_button_color;
+        border-width: revert;
+        padding: 0 3rem;
+        margin-bottom: 2rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    } 
+
+    .haveAnIdeaContent{
+        text-align: center;
+    }
+
+    .about-us-section .oneElement{
+        text-align: left;
+    }
+    
+}
+
+@media screen and (min-width: 1100px) {
+    .desktopOnly{
+        display: block;
+    }
+
+    .addPlusesLogo{
+        position: absolute;
+        top: 10%;
+        left: 15%;
+    }  
+
+    .mainDesc{
+        text-align: inherit;
+        position: relative;
+    }
+    
+    .mainDesc p{
+        color: $main_text_color2;
+        font-size: 1.2rem;
+        position: absolute;
+    }
+    
+    .mainDesc p{
+        top: 50%;
+        left: 15%;
+    }
+
+    .firstDescription, .secondDescription{
+        margin-left: 0;
+    }
+    
+    .mainDesc .secondDescription{
+        top: 65%;
+        left: 15%;
+        width: 50%;
+    }
+
+    .mobileTablet{
+        display: none;
+    }
+
+    .companyProfile{
+        position: relative;
+    }
+    
+    .companyProfile h1{
+        position: absolute;
+        left: 20%;
+        top: 20%;
+    }
+    
+    .companyProfile button{
+        position: absolute;
+        left: 20%;
+        top: 45%;
+    }
+
+    .haveAnIdeaContent{
+        text-align: inherit;
+    }
+
+    .whoAre{
+        padding: 0 3rem;
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .about-us-section{
+        margin-left: 3rem;
+    }
+    
+}
+
+

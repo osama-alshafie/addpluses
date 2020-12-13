@@ -1,0 +1,127 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto";
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  background-color: #3d6fc2;
+}
+
+@media screen and (min-width: 320px) {
+  .desktop, .tablet {
+    display: none;
+  }
+
+  .mobile, .mobileTablet {
+    display: block;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .desktop, .tablet {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .desktopOnly {
+    display: block;
+  }
+
+  .tablet, .mobileTablet {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) {
+  .mainDescription {
+    width: 90%;
+    padding-left: 1rem;
+    padding-bottom: 5rem;
+  }
+
+  .applyBtn {
+    text-align: center;
+  }
+
+  .careers .collapsible {
+    border-bottom: 1px solid #4285f4;
+    border-top: 1px solid #4285f4;
+    margin-bottom: 1rem;
+  }
+
+  .collapsible {
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mainDescription {
+    width: 50%;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .applyBtn {
+    text-align: inherit;
+  }
+
+  .careersDetails {
+    padding-bottom: 1rem;
+  }
+
+  .collapsible {
+    font-size: 2rem;
+  }
+}
+button:focus {
+  outline: 0;
+}
+
+.collapsible:after {
+  content: "+";
+  color: #4285f4;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "−";
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.content p {
+  color: #4285f4;
+  padding-left: 1rem;
+}
+
+.content button {
+  background-color: #4285f4;
+  border: 0;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 0.5rem 2.5rem;
+}
+
+/*# sourceMappingURL=careers.css.map */
